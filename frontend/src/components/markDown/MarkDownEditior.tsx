@@ -10,7 +10,7 @@ const MarkdownEditor: React.FC = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   useEffect(() => {
-    const newSocket = io("http://localhost:4000", {
+    const newSocket = io("https://markdown-viewer-backend-wjs3.onrender.com/", {
       transports: ["websocket"],
     });
     newSocket.on("connect", () => {
