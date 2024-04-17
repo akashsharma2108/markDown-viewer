@@ -1,0 +1,40 @@
+.markdown-editor {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 20px; 
+  min-height: 90dvh;
+  max-height: 90vh;
+}
+
+.markdown-input,
+.markdown-preview {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.markdown-input {
+  resize: none;
+  background-color: #888;
+  font-size: 16px;
+}
+
+.markdown-preview {
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.markdown-input:hover,
+.markdown-preview:hover {
+  border-color: #888;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .markdown-editor {
+    grid-template-columns: 1fr 1fr;
+  }
+}
