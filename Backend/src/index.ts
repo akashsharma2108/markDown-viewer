@@ -1,7 +1,7 @@
 import express from "express";
-import http from "http"; // Import http module instead of Server from 'http'
+import http from "http"; 
 import { Marked } from "marked";
-import { Server as SocketIOServer, Socket } from "socket.io"; // Import Socket.IO modules
+import { Server as SocketIOServer, Socket } from "socket.io"; 
 import { markedHighlight } from "marked-highlight";
 import hljs from "highlight.js";
 
@@ -16,8 +16,8 @@ const marked = new Marked(
 );
 
 const app = express();
-const server = http.createServer(app); // Create HTTP server
-const io = new SocketIOServer(server); // Create Socket.IO server
+const server = http.createServer(app); 
+const io = new SocketIOServer(server); 
 
 io.on("connection", (socket: Socket) => {
   console.log("Client connected");
@@ -25,7 +25,7 @@ io.on("connection", (socket: Socket) => {
   socket.on("message", async (message: string) => {
     try {
       const html = marked.parse(message);
-      socket.emit("html", html); // Send HTML back to the client
+      socket.emit("html", html);
     } catch (error) {
       console.error("Error parsing Markdown:", error);
     }
