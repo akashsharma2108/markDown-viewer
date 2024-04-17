@@ -20,24 +20,19 @@ You can access the application via the following link:
 Follow these steps to set up the application locally:
 
 1. Clone the repository: git clone https://github.com/akashsharma2108/markDown-viewer.git
-2. Deploying Backend:
-    -cd Backend
-    -npm install
-    -npm run dev
+2. Deploying Backend: <br/>
+    -cd Backend <br/>
+    -npm install <br/>
+    -npm run dev <br/>
 
 
 **Note:** If you encounter issues during installation, delete the `package-lock.json` file and run npm install again.
 
-Optional steps for building variant:
-   
-   -npm run build
-   -npm start
 
-
-3. Deploying Frontend:
-    -cd Frontend
-    -npm install
-    -npm start
+3. Deploying Frontend: <br/>
+    -cd Frontend <br/>
+    -npm install <br/>
+    -npm start  <br/>
 
 
 **Note:** If you encounter issues during installation, delete the `package-lock.json` file and run npm install again.
