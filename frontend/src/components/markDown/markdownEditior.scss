@@ -7,7 +7,6 @@
   border: none;
   padding: 8px 12px;
   border-radius: 4px;
-  z-index: 999;
   cursor: pointer;
 }
 
@@ -40,7 +39,6 @@
 }
 
 .markdown-preview {
-  overflow-y: auto;
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
