@@ -15,6 +15,7 @@ const ModalComponent: React.FC<ModalProps> = ({ isOpen, onClose }) => {
       bottom: "auto",
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
+      fontSize: "12px",
     },
   };
 
